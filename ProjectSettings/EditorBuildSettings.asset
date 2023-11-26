@@ -8,12 +8,13 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/main menu.unity
     guid: 98d50e340962ee249a10f15be08a4fa6
-  - enabled: 1
-    path: Assets/Scenes/Ingame.unity
-    guid: 9fc0d4010bbf28b4594072e72b8655ab
+  - enabled: 0
+    path: 
+    guid: 00000000000000000000000000000000
   - enabled: 0
     path: Assets/SpeechAndText/Sample/SampleSpeechToText.unity
     guid: d9447599b4cad0245ac00fa552c354b6
   m_configObjects:
     UnityEditor.XR.ARCore.ARCoreSettings: {fileID: 11400000, guid: ab71722faa3cffc479b2ff89b349d542, type: 2}
+    com.unity.xr.arfoundation.simulation_settings: {fileID: 11400000, guid: 3a3f306c4b1d47e419dbbdcf9d03f265, type: 2}
     com.unity.xr.management.loader_settings: {fileID: 11400000, guid: e8ee80aaaf1e67f45957f4bfed22d8e1, type: 2}
