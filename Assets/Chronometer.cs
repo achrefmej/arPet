@@ -3,17 +3,16 @@ using TMPro;
 
 public class Chronometer : MonoBehaviour
 {
-    [SerializeField]
     private TextMeshProUGUI textMeshPro;
-
     private float timer = 0f;
     private bool isRunning = false;
 
     void Start()
     {
+        textMeshPro = GetComponent<TextMeshProUGUI>();
         if (textMeshPro == null)
         {
-            Debug.LogError("TextMeshProUGUI component not set. Please assign the TextMeshProUGUI component in the Unity Editor.");
+            Debug.LogError("TextMeshProUGUI component not found on the GameObject.");
         }
     }
 

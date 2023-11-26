@@ -1,18 +1,17 @@
 using UnityEngine;
 using TMPro;
+using UnityEngine.UI;
 
 public class WolfAnimator : MonoBehaviour
 {
     public Animator wolfAnimator;
     public string screamKeyword = "scream";
     public string sitKeyword = "sit";
-    public string stateKeyword = "state"; // The keyword to trigger the state and enable the GameObject
+    public string stateKeyword = "state"; // The keyword to trigger the state and enable UI image
     public AudioClip screamSound;
     private AudioSource audioSource;
     private TextMeshProUGUI textMeshPro;
-
-    [SerializeField]
-    private GameObject stateGameObject; // Reference to the GameObject to enable/disable
+    public Image uiImage; // Reference to the UI image you want to enable
 
     void Start()
     {
@@ -79,19 +78,20 @@ public class WolfAnimator : MonoBehaviour
     {
         if (textMeshPro != null && textMeshPro.text.Contains(stateKeyword))
         {
-            // Enable the serialized GameObject when the state is detected
-            if (stateGameObject != null)
+            // Enable the UI image when the state is detected
+            if (uiImage != null)
             {
-                stateGameObject.SetActive(true);
+                uiImage.enabled = true;
             }
         }
         else
         {
-            // Disable the serialized GameObject when the state is not detected
-            if (stateGameObject != null)
+            // Disable the UI image when the state is not detected
+            if (uiImage != null)
             {
-                stateGameObject.SetActive(false);
+                uiImage.enabled = false;
             }
         }
     }
 }
+
