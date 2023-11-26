@@ -1,5 +1,0 @@
-<manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.DefaultCompany.DragonFly">
-    <uses-permission android:name="android.permission.VIBRATE" />
-    <!-- Autres éléments du manifeste -->
-</manifest>

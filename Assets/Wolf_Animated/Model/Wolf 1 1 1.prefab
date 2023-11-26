@@ -1182,9 +1182,12 @@ GameObject:
   - component: {fileID: 2070474730197175340}
   - component: {fileID: 2070474730197175343}
   - component: {fileID: 2070474730197175315}
+  - component: {fileID: -4975005402821180507}
+  - component: {fileID: 1111374804253710631}
+  - component: {fileID: 6929879269451241208}
   m_Layer: 0
   m_Name: Wolf 1 1 1
-  m_TagString: Untagged
+  m_TagString: Wolf
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1198,8 +1201,8 @@ Transform:
   m_GameObject: {fileID: 2070474730197175419}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -0.00041111, y: -0.040042, z: 0.0018956}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
+  m_LocalScale: {x: 0.08, y: 0.08, z: 0.08}
+  m_ConstrainProportionsScale: 1
   m_Children:
   - {fileID: 2070474730197175326}
   - {fileID: 2070474730197175413}
@@ -1243,7 +1246,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 11e5380c3f5447241b1f41c7cd71eacc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 1
+  speed: 0.5
 --- !u!54 &2070474730197175315
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -1260,6 +1263,48 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &-4975005402821180507
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2070474730197175419}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ca19b1db3a710ba4b99387ff64cbdb4f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  wolfAnimator: {fileID: 2070474730197175340}
+  screamKeyword: scream
+  sitKeyword: sit
+  screamSound: {fileID: 8300000, guid: cb1c66026bd3ac941ad4918706dedec1, type: 3}
+--- !u!65 &1111374804253710631
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2070474730197175419}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 2.192232, z: 0.9587324}
+  m_Center: {x: 0, y: 1.3457296, z: 1.3300873}
+--- !u!114 &6929879269451241208
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2070474730197175419}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 099af0a08be1ccd42862ed5b29f07bef, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  wolfAnimator: {fileID: 2070474730197175340}
 --- !u!1 &2070474730197175420
 GameObject:
   m_ObjectHideFlags: 0
